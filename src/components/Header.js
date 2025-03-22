@@ -1,12 +1,16 @@
 // src/components/Header.js
 import React from "react";
-import logo from "../logo.svg";
 import assets from "../img";
 
 const Header = ({ language, toggleLanguage, darkMode }) => {
 	const translations = {
 		en: { home: "Home", link: "Link", dropdown: "Dropdown", search: "Search" },
-		es: { home: "Inicio", link: "Enlace", dropdown: "Desplegable", search: "Buscar" },
+		es: {
+			home: "Inicio",
+			link: "Enlace",
+			dropdown: "Desplegable",
+			search: "Buscar",
+		},
 	};
 
 	return (
@@ -17,7 +21,7 @@ const Header = ({ language, toggleLanguage, darkMode }) => {
 		>
 			<div className="container-fluid">
 				<a className="navbar-brand" href="#">
-					<img src={assets.img7} alt="LOL" width="150" height="40"/>
+					<img src={assets.img7} alt="LOL" width="150" height="40" />
 				</a>
 				<button
 					className="navbar-toggler"

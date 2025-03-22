@@ -35,7 +35,7 @@ const Abilities = () => {
 				</div>
 				{/* BackEnd */}
 				<div className="col-12 col-md-6">
-						<div
+					<div
 						className="card border-0 text-center"
 						style={{ backgroundColor: "inherit", color: "inherit" }}
 					>
@@ -60,7 +60,7 @@ const Abilities = () => {
 				</div>
 				{/* Testing */}
 				<div className="col-12 col-md-6">
-						<div
+					<div
 						className="card border-0 text-center"
 						style={{ backgroundColor: "inherit", color: "inherit" }}
 					>
@@ -86,7 +86,7 @@ const Abilities = () => {
 				</div>
 				{/* Herramientas */}
 				<div className="col-12 col-md-6">
-						<div
+					<div
 						className="card border-0 text-center"
 						style={{ backgroundColor: "inherit", color: "inherit" }}
 					>

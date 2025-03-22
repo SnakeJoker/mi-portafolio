@@ -36,8 +36,8 @@
 
 .SPSTC {
 	@media screen and (max-width: 600px) {
-    flex-direction: column;
-    align-items: center;
+		flex-direction: column;
+		align-items: center;
 	}
 }
 

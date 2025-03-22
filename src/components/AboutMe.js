@@ -13,22 +13,22 @@ const AboutMe = ({ language }) => {
 		es: {
 			greeting: "Hola",
 			intro: "soy",
-			description: "Desarrollador Full Stack, apasionado por el desarrollo Frontend.",
+			description:
+				"Desarrollador Full Stack, apasionado por el desarrollo Frontend.",
 			downloadCV: "Descargar CV",
 			contactMe: "Contáctame",
 		},
 	};
 
-	const { greeting, intro, description, downloadCV, contactMe } = translations[language];
+	const { greeting, intro, description, downloadCV, contactMe } =
+		translations[language];
 
 	return (
-		<section
-			className="d-flex flex-column justify-content-center align-items-center text-center vh-100"
-		>
+		<section className="d-flex flex-column justify-content-center align-items-center text-center vh-100">
 			<h4 className="mb-2">
 				{greeting}{" "}
 				<span role="img" aria-label="wave">
-						👋
+					👋
 				</span>
 				, {intro}
 			</h4>
@@ -38,8 +38,8 @@ const AboutMe = ({ language }) => {
 					background: "linear-gradient(90deg, #6a11cb, #2575fc)",
 					WebkitBackgroundClip: "text",
 					color: "transparent",
-                    fontSize: "5rem",
-                    fontFamily: "fantasy"
+					fontSize: "3rem",
+					fontFamily: "fantasy",
 				}}
 			>
 				Stephan
@@ -50,8 +50,8 @@ const AboutMe = ({ language }) => {
 					background: "linear-gradient(90deg, #6a11cb, #2575fc)",
 					WebkitBackgroundClip: "text",
 					color: "transparent",
-                    fontSize: "6rem",
-                    fontFamily: "fantasy"
+					fontSize: "4rem",
+					fontFamily: "fantasy",
 				}}
 			>
 				Jimenez
