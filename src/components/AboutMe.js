@@ -60,20 +60,14 @@ const AboutMe = ({ language }) => {
 				{description}
 			</p>
 			<div className="mt-4">
-				<a
-					href="/cv.pdf"
-					className="btn btn-lg btn-primary me-3"
-					style={{ color: "inherit" }}
-				>
+				<div class="d-grid gap-2 d-md-block">
+					<button class="btn btn-primary" type="button">
 					{downloadCV} <FaDownload />
-				</a>
-				<a
-					href="#contacto"
-					className="btn btn-lg btn-secondary"
-					style={{ color: "inherit" }}
-				>
+					</button>
+					<button class="btn btn-primary" type="button">
 					{contactMe} <FaPaperPlane />
-				</a>
+					</button>
+				</div>
 			</div>
 		</section>
 	);

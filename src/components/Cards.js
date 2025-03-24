@@ -1,114 +1,71 @@
 import React from "react";
 
-const Cards = () => {
+const Cards = ({ language }) => {
+	const translations = {
+		en: {
+			title: "Projects",
+			project1: "E-commerce Website",
+			project2: "Portfolio Website",
+			project3: "Task Management App",
+		},
+		es: {
+			title: "Proyectos",
+			project1: "Sitio Web de E-commerce",
+			project2: "Sitio Web de Portafolio",
+			project3: "Aplicación de Gestión de Tareas",
+		},
+	};
+
 	return (
-		<div className="container">
-			<h2 className="text-center mt-5 p-5 pb-2">Proyectos</h2>
-			<div className="row row-cols-1 row-cols-md-2 g-4 mt-2">
-				<div className="col">
-					<div className="card h-100">
-						<svg
-							class="bd-placeholder-img card-img-top text"
-							width="100%"
-							height="140"
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							aria-label="Placeholder: Image cap"
-							preserveAspectRatio="xMidYMid slice"
-							focusable="false"
-						>
-							<title>Placeholder</title>
-							<rect width="100%" height="100%" fill="#868e96"></rect>
-							<text x="50%" y="50%" fill="#dee2e6" dy=".3em">
-								Image cap
-							</text>
-						</svg>
+		<div className="container my-5">
+			<h2 className="text-center mb-5" style={{ color: "inherit" }}>
+				{translations[language].title}
+			</h2>
+			<div className="row g-4">
+				{/* Project 1 */}
+				<div className="col-12 col-md-4">
+					<div
+						className="card border-0 text-center"
+						style={{ backgroundColor: "inherit", color: "inherit" }}
+					>
 						<div className="card-body">
-							<h5 className="card-title">Card title</h5>
+							<h5 className="card-title">{translations[language].project1}</h5>
 							<p className="card-text">
-								This is a longer card with supporting text below as a natural lead-in to
-								additional content. This content is a little bit longer.
+								{language === "en"
+									? "An online store built with React and Node.js."
+									: "Una tienda en línea construida con React y Node.js."}
 							</p>
 						</div>
 					</div>
 				</div>
-				<div className="col">
-					<div className="card h-100">
-						<svg
-							class="bd-placeholder-img card-img-top"
-							width="100%"
-							height="140"
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							aria-label="Placeholder: Image cap"
-							preserveAspectRatio="xMidYMid slice"
-							focusable="false"
-						>
-							<title>Placeholder</title>
-							<rect width="100%" height="100%" fill="#868e96"></rect>
-							<text x="50%" y="50%" fill="#dee2e6" dy=".3em">
-								Image cap
-							</text>
-						</svg>
+				{/* Project 2 */}
+				<div className="col-12 col-md-4">
+					<div
+						className="card border-0 text-center"
+						style={{ backgroundColor: "inherit", color: "inherit" }}
+					>
 						<div className="card-body">
-							<h5 className="card-title">Card title</h5>
+							<h5 className="card-title">{translations[language].project2}</h5>
 							<p className="card-text">
-								This is a longer card with supporting text below as a natural lead-in to
-								additional content. This content is a little bit longer.
+								{language === "en"
+									? "A personal portfolio showcasing my skills and projects."
+									: "Un portafolio personal que muestra mis habilidades y proyectos."}
 							</p>
 						</div>
 					</div>
 				</div>
-				<div className="col">
-					<div className="card h-100">
-						<svg
-							class="bd-placeholder-img card-img-top"
-							width="100%"
-							height="140"
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							aria-label="Placeholder: Image cap"
-							preserveAspectRatio="xMidYMid slice"
-							focusable="false"
-						>
-							<title>Placeholder</title>
-							<rect width="100%" height="100%" fill="#868e96"></rect>
-							<text x="50%" y="50%" fill="#dee2e6" dy=".3em">
-								Image cap
-							</text>
-						</svg>
+				{/* Project 3 */}
+				<div className="col-12 col-md-4">
+					<div
+						className="card border-0 text-center"
+						style={{ backgroundColor: "inherit", color: "inherit" }}
+					>
 						<div className="card-body">
-							<h5 className="card-title">Card title</h5>
+							<h5 className="card-title">{translations[language].project3}</h5>
 							<p className="card-text">
-								This is a longer card with supporting text below as a natural lead-in to
-								additional content.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div className="col">
-					<div className="card h-100">
-						<svg
-							class="bd-placeholder-img card-img-top"
-							width="100%"
-							height="140"
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							aria-label="Placeholder: Image cap"
-							preserveAspectRatio="xMidYMid slice"
-							focusable="false"
-						>
-							<title>Placeholder</title>
-							<rect width="100%" height="100%" fill="#868e96"></rect>
-							<text x="50%" y="50%" fill="#dee2e6" dy=".3em">
-								Image cap
-							</text>
-						</svg>
-						<div className="card-body">
-							<h5 className="card-title">Card title</h5>
-							<p className="card-text">
-								This is a longer card with supporting text below as a natural lead-in to
-								additional content. This content is a little bit longer.
+								{language === "en"
+									? "A task management app to organize your daily activities."
+									: "Una aplicación de gestión de tareas para organizar tus actividades diarias."}
 							</p>
 						</div>
 					</div>

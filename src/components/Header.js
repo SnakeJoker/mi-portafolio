@@ -4,11 +4,24 @@ import assets from "../img";
 
 const Header = ({ language, toggleLanguage, darkMode }) => {
 	const translations = {
-		en: { home: "Home", link: "Link", dropdown: "Dropdown", search: "Search" },
+		en: {
+			home: "Home",
+			link: "Link",
+			dropdown: "Dropdown",
+			action: "Action",
+			anotherAction: "Another action",
+			somethingElse: "Something else here",
+			disabled: "Disabled",
+			search: "Search",
+		},
 		es: {
 			home: "Inicio",
 			link: "Enlace",
 			dropdown: "Desplegable",
+			action: "Acción",
+			anotherAction: "Otra acción",
+			somethingElse: "Algo más aquí",
+			disabled: "Deshabilitado",
 			search: "Buscar",
 		},
 	};
@@ -59,12 +72,12 @@ const Header = ({ language, toggleLanguage, darkMode }) => {
 							<ul className="dropdown-menu">
 								<li>
 									<a className="dropdown-item" href="#">
-										Action
+										{translations[language].action}
 									</a>
 								</li>
 								<li>
 									<a className="dropdown-item" href="#">
-										Another action
+										{translations[language].anotherAction}
 									</a>
 								</li>
 								<li>
@@ -72,14 +85,14 @@ const Header = ({ language, toggleLanguage, darkMode }) => {
 								</li>
 								<li>
 									<a className="dropdown-item" href="#">
-										Something else here
+										{translations[language].somethingElse}
 									</a>
 								</li>
 							</ul>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link disabled" aria-disabled="true" href="#">
-								Disabled
+								{translations[language].disabled}
 							</a>
 						</li>
 					</ul>
